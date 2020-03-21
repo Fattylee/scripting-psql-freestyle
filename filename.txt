@@ -1,0 +1,7 @@
+{
+"name": "abu lulu",
+  "age":32,
+  "age":67,
+  "fact": true,
+  "brother": ["akeem","saheed","rahman"]
+}
