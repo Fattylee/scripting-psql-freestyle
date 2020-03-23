@@ -1,0 +1,34 @@
+<html>
+  <head>
+<meta name="viewport" content="width=min-width, initial-scale=1">
+    <title>Freestyle more for fun!</title>
+
+<script src="node_modules/eruda/eruda.js"></script>
+<script>eruda.init();</script> 
+<script src="node_modules/eruda-dom/eruda-dom.js"></script>
+<script>eruda.add(erudaDom);</script> 
+<script src="node_modules/eruda-code/eruda-code.js"></script>
+<script>eruda.add(erudaCode);</script> 
+</head>
+  <body>
+    <h1>this is awesomeness</h1>
+    <select id="someList" name="justRand">
+      <option value="">option 1</option>
+      <option value="">option 2</option>
+      <option value="">option 3</option>
+    </select>
+    <button id="showSomeLove">Show some love</button>
+
+      <!-- add a new note c -->
+    <form id="add-note" action="">
+      <input type="text" name="note-title" placeholder="add a new note">
+      <button>Add note</button>
+    </form>
+    <div id="notes"></div>
+    <div id="root"></div>
+    <!-- <script src="node_modules/react/umd/react.development.js"></script> -->
+    <!-- <script src="node_modules/react-dom/umd/react-dom.development.js"></script> -->
+    <script src="/app.js"></script>
+    <script src="/dist.js"></script>
+  </body>
+</html>

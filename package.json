@@ -9,14 +9,25 @@
     "test-api": "nodemon -x \"curl -I http://localhost:4500/images | jq \" -e .txt ",
     "uploads": "curl http://localhost:4500/images -F img=@pix.jpg -F key='ggh hhh' -Fabu='lulu baba' -v ",
     "start:dev": "PORT=4500 nodemon index.js",
-    "shell": "nodemon -x bash bash.sh -e .sh"
+    "shell": "nodemon -x bash unix.sh -e .sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
+    "eruda": "^2.2.1",
+    "eruda-code": "^2.0.0",
+    "eruda-dom": "^2.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "express": "^4.17.1",
     "heroku": "^7.39.0",
-    "multer": "^1.4.2"
+    "multer": "^1.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
