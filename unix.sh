@@ -222,25 +222,88 @@ val=1
 # done
 # for i in ls pwd;do  $i; done
 
-list=(a b c d e f)
-echo ${list[@]}
-select val in ${list[@]}
-do
-  text="$val is for "
-case $val in
-  'a')
-    echo ${text}apple ;;
-  'b')
-    echo ${text}baby ;;
-  'c')
-    echo ${text}cat ;;
-  'd')
-    echo ${text}dog ;;
-  'e')
-    echo ${text}egg ;;
-  'f')
-    echo ${text}fish ;;
-  *)
-    echo select option between 1 - 6 ;;
-esac
-done
+# list=(a b c d e f)
+# echo ${list[@]}
+# select val in ${list[@]}
+# do
+#   text="$val is for "
+# case $val in
+#   'a')
+#     echo ${text}apple ;;
+#   'b')
+#     echo ${text}baby ;;
+#   'c')
+#     echo ${text}cat ;;
+#   'd')
+#     echo ${text}dog ;;
+#   'e')
+#     echo ${text}egg ;;
+#   'f')
+#     echo ${text}fish ;;
+#   *)
+#     echo select option between 1 - 6 ;;
+# esac
+# done
+
+# for ((i=0;i<10;i++))
+# do
+#   if [ $i -eq 3 -o $i -eq 6 ]
+#   then
+#     echo skipped $i
+#     continue
+#   fi
+
+#   if (( $i==8 ))
+#   then
+# echo breaking out of the loop...
+#     break
+#   fi
+# echo $i
+# done
+
+# val=56
+# function sum(){
+#   local val=0
+#   echo local is $val
+#   echo $(($1+$2))
+#   return 7
+# }
+# sayHello(){
+# echo $1 says $2
+# }
+# res=$(sum 3 2)
+# sayHello abu "assalamu 'alaikum"
+# sayHello $1 $2
+# echo global is $val : res is $res
+# if [[ abd > bde ]] # if [ abd \> bde ]
+# if [ 5 == 5 ]
+# if [[ 5 = "5" ]]
+# if [[ 5 = "5" && 12 == 1 ]]
+# if [ 5 = "5" -a 1 == 1 -o -5 = 5 ]
+# if [ \( 5 -ne "5" -a 1 == 1 \) -o -5 = 5 ]
+# if [[ ( 5 != "5" && 1 == 1 ) || -5 = 5 ]]
+# if [[ 5 != 5 ]]
+val="*"
+# if [[ $val = 'a b' ]]
+# if [ "$val" = 'a b' ] # if [ $val = 'a b' ]
+# if [[ $val = 'a b' ]]
+# if [[ ab = ?b ]]
+# if [ ab = \?b ]
+# if [[ "filename" = *z* ]]
+# then
+#   echo true
+# else
+#   echo false
+# fi
+
+# [ "$val" ] || echo 'no value'
+# [ "$val" ] &&  echo 'no value'
+# >&2
+# [[ $val ]] &&  echo 'no value'
+
+if [ "ab" > ab ] 
+  then
+    printf '%d is greater than %s' 5 4
+  else
+    printf "no show"
+fi
