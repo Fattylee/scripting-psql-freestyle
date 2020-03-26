@@ -10,8 +10,11 @@
     "uploads": "curl http://localhost:4500/images -F img=@pix.jpg -F key='ggh hhh' -Fabu='lulu baba' -v ",
     "start:dev": "PORT=4500 nodemon index.js",
     "shell": "nodemon -x bash unix.sh -e .sh",
-    "psql": "nodemon -x psql -c \"\\i playground/psql.sql\" -e .sql -w playground"
+    "psql": "pg_ctl -D $PREFIX/var/lib/postgresql start && nodemon -x psql -c \"\\i playground/psql.sql\" -e .sql -w playground",
+    "mysql": " nodemon -x 'mysql -e \"\\. playground/mysql.sql\" test' -e .sql -w playground",
+    "babel": "nodemon -x \"babel react-app.js -o dist.js\" -w react-app.js  "
   },
+  "browserslist": "> 0.25%, not dead",
   "keywords": [],
   "author": "",
   "license": "ISC",

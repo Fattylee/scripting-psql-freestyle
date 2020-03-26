@@ -3,5 +3,4 @@
     "@babel/env",
     "@babel/react"
   ],
-  "targets": "> 0.25%, not dead"
 }

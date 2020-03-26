@@ -53,11 +53,11 @@ select * from persons join cars using (id);
 --    end;
 --    $$;
 
-create or replace function sumTwo(a bigint, b int) returns void as $$
-begin
-raise notice '%', 6;
-end;
-$$ language plpgsql;
+--  create or replace function sumTwo(a bigint, b int) returns void as $$
+--  begin
+--  raise notice '%', 6;
+--  end;
+--  $$ language plpgsql;
 --  select sumTwo(4,5)
 
 --  create extension if not exists "uuid-ossp";
@@ -65,3 +65,5 @@ $$ language plpgsql;
 --  \df
 
 --  select * from persons join cars using (cars_id);
+
+select * from pg_available_extensions;
