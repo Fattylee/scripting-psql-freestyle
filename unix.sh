@@ -171,13 +171,17 @@ num=7
 # echo keys: ${!val[@]}
 
 val=1
+# unset val
+echo $val
+# zap=5
 # while [[ $val -le 10 ]]
 # while [ $val -le 10 ]
-# while (( $val <= 10 ))
-# do
-#   echo $val
-#   ((++val))
-# done
+# while (( zap <= 10 ))
+while [[ $zap -le 10 ]]
+do
+  echo test: $zap
+  (( ++zap))
+done
 
 # echo  $((4+5))
 # res=($( echo 'scale=2;sqrt(81);6^2' | bc -l))
@@ -301,7 +305,8 @@ val="*"
 # >&2
 # [[ $val ]] &&  echo 'no value'
 
-if [ "ab" > ab ] 
+# if [ "ab" \> ab ] 
+if [[ "ab" > ab ]]
   then
     printf '%d is greater than %s' 5 4
   else
